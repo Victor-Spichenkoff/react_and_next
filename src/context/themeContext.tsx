@@ -10,7 +10,7 @@ const STORAGE_THEME = '__dark_light'
 export const ThemeContext = createContext<DarkThemeContext | null>(null)
 
 export default function ThemeProvider({children}: {children: ReactNode}) {
-    const [theme, setTheme] = useState<"light" | "dark" >(setarInicial)
+    const [theme, setTheme] = useState<"light" | "dark" >('dark'/*setarInicial*/)
 
     function setarInicial() {
         const storage:any = JSON.parse(localStorage.getItem(STORAGE_THEME) || 'light')

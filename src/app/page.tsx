@@ -8,6 +8,7 @@ import { MeuContext } from "@/context/teste"
 import DarkTheme from "./darkTheme"
 import Tanstack from "@/components/tanstack"
 import ReactHookForm from "@/components/reactFormHook"
+import TesteStorage from "@/components/TesteStorage"
 
 
 function MeuHeader() {
@@ -30,6 +31,7 @@ export default function Page() {
             <DarkTheme></DarkTheme>
             <Tanstack></Tanstack>
             <ReactHookForm></ReactHookForm>
+            <TesteStorage></TesteStorage>
         </>
     )
 }
