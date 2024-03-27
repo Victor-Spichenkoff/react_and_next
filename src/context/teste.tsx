@@ -18,7 +18,7 @@ export default function MeuContextProvider ({ children }: MeuContextProviderType
 
     return (
       <MeuContext.Provider value={{ txt, setTxt }}>
-      
+        {children}
       </MeuContext.Provider>
     )
 }
